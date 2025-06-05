@@ -2,7 +2,7 @@
 
 class Program
 {
-    public class Player
+    private class Player
     {
         //Since we aren't using any custom logic in get/set we'll use C#'s auto-implementation
         public string FirstName { get; set; }
@@ -12,7 +12,7 @@ class Program
 
     //instantiate player object at Program class level 
     //so it's accessible from any method within Program class as long as the methods are static
-    public static Player player = new Player();
+    private static Player player = new Player();
 
     //create a new string list which also needs to be static since we are populating it inside the InitializeList method
     static List<string> greetingList = new List<string>();
