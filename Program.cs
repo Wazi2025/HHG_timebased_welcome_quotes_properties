@@ -4,13 +4,13 @@ class Program
 {
     public class Player
     {
+        //Since we aren't using any custom logic in get/set we'll use C#'s auto-implementation
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-
     }//end of class Player
 
-    //instantiate player object at Program class level
+    //instantiate player object at Program class level 
     //so it's accessible from any method within Program class as long as the methods are static
     public static Player player = new Player();
 
@@ -126,7 +126,7 @@ class Program
 
     public static void ReadInput()
     {
-        //ask the user for their firstname, lastname and age and add these values to their respective player fields
+        //ask the user for their firstname, lastname and age and add these values to their respective player properties
         string? result = null;
         bool ageIsANumber = false;
 
